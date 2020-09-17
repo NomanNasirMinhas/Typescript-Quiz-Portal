@@ -3,9 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import RouteConfig from './Route'
 import Quiz from './Components/Quiz'
+import {configureNotification} from './services/firebaseService'
 
 function App() {
-  require('dotenv').config()
+  configureNotification()
   return (
     <div className="App">
       <RouteConfig />

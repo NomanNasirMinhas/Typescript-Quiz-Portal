@@ -59,6 +59,7 @@ export default function Home() {
   };
 
   const submitForm = (event: any) => {
+
     if (name.length === 0) {
       alert("Please Provide Your Name")
     }
