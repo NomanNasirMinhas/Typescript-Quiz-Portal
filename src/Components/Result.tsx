@@ -43,7 +43,7 @@ export default function Result() {
   var name = localStorage.getItem('name');
   var score = Number(localStorage.getItem('score'));
   var nulls = Number(localStorage.getItem('null'));
-  var wrong = 30 - (score + nulls);
+  var wrong = 15 - (score + nulls);
   var percent = (score / (score + wrong))*100 ;
 
 

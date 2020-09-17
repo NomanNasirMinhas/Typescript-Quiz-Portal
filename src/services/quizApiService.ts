@@ -1,6 +1,6 @@
 import { ResponseType,usedParams } from './../types/apiTypes'
 
-const API_KEY = Your Key Here;
+const API_KEY = 'YOUR_API_KEY';
 export const getQuiz = async (questions: number, category: string) => {
     const response = await fetch(`https://quizapi.io/api/v1/questions?apiKey=${API_KEY}&limit=${questions}&tag=${category}`);
     const result = await response.json();
