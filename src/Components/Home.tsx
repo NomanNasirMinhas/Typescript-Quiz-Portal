@@ -8,6 +8,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import { useHistory } from "react-router-dom";
 import FormLabel from '@material-ui/core/FormLabel';
+import './../App.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,8 +17,10 @@ const useStyles = makeStyles((theme) => ({
     },
     alignContent: 'center',
     margin: 'auto',
-    width: "40%",
-    height: "60%",
+    width: "90%",
+    height: "90%",
+    paddingRight: '50px',
+    paddingLeft: '50px',
     backgroundColor: "#00B7FC80"
   },
   form: {
@@ -30,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     alignSelf: 'center',
-    float: 'right',
+    // float: 'right',
     margin: 'auto'
   },
 
@@ -72,7 +75,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className={classes.root}>
       <h1>Boot&Camp Quiz Portal</h1>
       <h2>Please Enter Your Name and Select Category of the Quiz You want to Give</h2>
       <div>

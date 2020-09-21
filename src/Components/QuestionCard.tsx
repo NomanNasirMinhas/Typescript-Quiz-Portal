@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import { quizParam } from './../types/apiTypes';
+import './../App.css'
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -26,8 +27,11 @@ const SimplePaper: React.FC<quizParam> = ({ question, answers, correct_answer, c
             // flexWrap: 'wrap',
             // '& > *': {
             // margin: theme.spacing(1),
-            width: "70%",
+            width: "80%",
             height: "60%",
+            paddingTop: '50px',
+            // paddingBottom: '50px',
+            // paddingLeft: '50px',
             backgroundColor: "#00B7FC80"
             // },
         },
@@ -105,7 +109,7 @@ const SimplePaper: React.FC<quizParam> = ({ question, answers, correct_answer, c
     });
 
     return (
-        <div className={classes.root}>
+        <div >
 
             <Paper className={classes.root} elevation={3} >
                 <h3>{question}</h3>
